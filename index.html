@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-gray-900">
+    <div class="text-center">
+      <div id="timer" class="text-5xl text-gray-200 font-bold mb-4">00:30</div>
+      <button
+        id="startBtn"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+      >
+        Start
+      </button>
+      <button
+        id="stopBtn"
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Stop
+      </button>
+    </div>
+    <audio id="notificationSound" src="notification.mp3"></audio>
+    <script src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
