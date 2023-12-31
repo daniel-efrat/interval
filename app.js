@@ -43,3 +43,11 @@ startBtn.addEventListener("click", startTimer)
 stopBtn.addEventListener("click", stopTimer)
 
 updateTimerDisplay()
+const volumeSlider = document.getElementById("volumeSlider")
+
+function updateVolume() {
+  notificationSound.volume = volumeSlider.value
+  notificationSound.play()
+}
+
+volumeSlider.addEventListener("input", updateVolume)
